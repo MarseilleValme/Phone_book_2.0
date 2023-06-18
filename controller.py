@@ -7,7 +7,7 @@ def start():
     while True:
         choice = menu()
         if choice == 1:
-            if not model.phone_book:
+            if not model.phone_book:        # Дабы при повторном открытии файла не дублировать список дописыванием в самого себя
                 model.open_file()
                 print_message(text.open_successful[0])
             else:

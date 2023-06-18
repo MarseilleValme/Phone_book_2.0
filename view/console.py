@@ -34,7 +34,7 @@ def show_contacts(book):
 def input_contact(message: str):
     print(message)
     name = input(new_contact[0])
-    phone = input(new_contact[1])
+    phone = input(new_contact[1])#      Поправил индексы
     comment = input(new_contact[2])
     return {'name': name, 'phone': phone, 'comment': comment}
 
